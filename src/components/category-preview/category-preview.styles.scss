@@ -1,0 +1,29 @@
+.category-preview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-size: 5rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+  }
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-preview-container {
+    .title {
+        font-size: 2.5rem;    
+      }
+  }
+}

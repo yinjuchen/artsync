@@ -1,0 +1,31 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2000px;
+  margin-bottom: 5px;
+
+  img {
+      width: 100%;
+      display: block;
+      height: 450px;
+      margin: 0 auto;
+    }
+
+  .text-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align:right;
+    padding: 20px;
+  
+    .home-quote {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+
+  h2 {
+    font-size: 5rem;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .category-container {
+    h2 {
+        font-size: 2.5rem;
+      }
+  } 
+
+}
