@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 100%;
 
   .quote-card-container {
     border: 1px solid black;
-    width: 97%;
+    width: 95%;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 6px 3px 3px #eee;
@@ -31,6 +32,7 @@
       opacity: 1;
       transform: scale(1.1)
     }
+    margin: 0 10px;
   }
 }
   
