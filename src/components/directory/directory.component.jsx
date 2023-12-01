@@ -29,7 +29,7 @@ const Directory = () => {
           <DirectoryItem key={gallery.id }gallery={gallery} />
       ))}
     </div>
-  );
-};
+  )
+}
 
 export default Directory;
