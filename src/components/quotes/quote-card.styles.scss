@@ -25,5 +25,15 @@
   }
 }
 
+@media (max-width:480px) and (hover:none){
+  .quote-card-container {
+    &:active {
+      opacity: 1;
+      transform: scale(1.1)
+    }
+  }
+}
+  
+
 
 
