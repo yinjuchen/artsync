@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Fragment>
       <div className='image-container'>
-        <img src='https://i.ibb.co/d0Sj4S6/home-cover.jpg' alt=''/>
+        <img src='https://i.ibb.co/dj8hv7M/home-cover-jpg.jpg' alt='' loading='lazy'/>
         <div className='text-overlay'>
           <div className='home-quote'>“Art is the expression of the profoundest thoughts in the simplest way.”- Albert Einstein</div>
         </div>
