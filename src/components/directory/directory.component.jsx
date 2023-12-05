@@ -5,19 +5,19 @@ const galleries = [
     {
       id: 1,
       title: 'Sketch',
-      imageUrl: 'https://i.ibb.co/7Rr59Dd/sketch-4.jpg',
+      imageUrl: 'https://i.ibb.co/Wgb58ZX/sketch-cover.webp',
       route: 'gallery/sketch',
     },
     {
       id: 2,
       title: 'Sculpture',
-      imageUrl: 'https://i.ibb.co/C7dg5cM/sculpture-cover.jpg',
+      imageUrl: 'https://i.ibb.co/s1YVyng/sculpture-cover.webp',
       route: 'gallery/sculpture',
     },
     {
       id: 3,
       title: 'Painting',
-      imageUrl: 'https://i.ibb.co/CnXVz3n/painting-cover.jpg',
+      imageUrl: 'https://i.ibb.co/zR8hcSt/painting-cover.webp',
       route: 'gallery/painting',
     },
   ]

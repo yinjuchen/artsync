@@ -8,7 +8,7 @@ const Home = () => {
     <Fragment>
       <div className='image-container'>
         <img 
-          src='https://i.ibb.co/dj8hv7M/home-cover-jpg.jpg' 
+          src='https://i.ibb.co/cKqxHZR/home-cover-image.webp' 
           alt='' 
           data-testid="home-cover-image" 
           className='home-cover-imag'
