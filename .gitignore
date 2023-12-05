@@ -25,3 +25,11 @@ yarn-error.log*
 # Ignore 
 home.data.json
 gallery.data.js
+
+# Ignore a directory and its contents
+cypress/
+
+
+
+
+
