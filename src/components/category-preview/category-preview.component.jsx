@@ -23,3 +23,4 @@ const CategoryPreview = ({title, galleries}) => {
 }
 
 export default CategoryPreview
+

@@ -25,10 +25,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 10%;
+    height: auto;
     font-size: 1.1rem;
+    padding: 10px 20px;
     span {
         display: block;
+        word-wrap: break-word;
       }
 
     a {
