@@ -39,7 +39,7 @@ const GalleryCard = ({ gallery }) => {
       // checks if the image has successfully loaded without any errors.
         <div className="footer">
           <span>{name}</span>
-          <span>
+          <span className='contributor'>
             Contributor:
             <a href={contributor} target='_blank' rel='noopener noreferrer'>
               {contributor}

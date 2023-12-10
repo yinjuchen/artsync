@@ -2,17 +2,16 @@ import { Fragment } from 'react';
 import Directory from '../../components/directory/directory.component'
 import './home.styles.scss'
 
-// Define your galleries array directly within the component
 const Home = () => {
   return (
     <Fragment>
-      <div className='image-container'>
-        <img 
-          src='https://i.ibb.co/cKqxHZR/home-cover-image.webp' 
-          alt='' 
-          data-testid="home-cover-image" 
-          className='home-cover-imag'
-        />
+     <div className='image-container' style={{ 
+        backgroundImage: 'url("https://i.ibb.co/cKqxHZR/home-cover-image.webp")',
+        minHeight: '350px',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative',
+      }}>
         <div className='text-overlay'>
           <div className='home-quote'>“Art is the expression of the profoundest thoughts in the simplest way.”- Albert Einstein</div>
         </div>

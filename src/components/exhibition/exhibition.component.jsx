@@ -47,8 +47,9 @@ const Exhibition = () => {
 
 return (
   <div className="App">
-    {filterredArtworkers.length > 0 && (
-      <Fragment>
+    {
+      filterredArtworkers.length > 0 && (
+        <Fragment>
         <SearchBox
           onChangeHandler={onSearchChange}
           className='search-box'
@@ -56,7 +57,8 @@ return (
         />
         <ExhibitionCardList artworkers={filterredArtworkers} />
       </Fragment>
-    )}
+      )
+    }
   </div>
 )}
 
