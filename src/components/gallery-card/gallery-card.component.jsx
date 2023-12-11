@@ -20,7 +20,7 @@ const GalleryCard = ({ gallery }) => {
 
   return (
     <div className="gallery-card-container">
-      <div className='image-container'>
+      <div className='gallery-image-container'>
         <img
           src={imageUrl}
           alt={`${name}`}

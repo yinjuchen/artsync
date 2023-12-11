@@ -5,7 +5,7 @@ import './home.styles.scss'
 const Home = () => {
   return (
     <Fragment>
-     <div className='image-container' style={{ 
+     <div className='home-image-container' style={{ 
         backgroundImage: 'url("https://i.ibb.co/cKqxHZR/home-cover-image.webp")',
         minHeight: '350px',
         backgroundSize: 'cover',

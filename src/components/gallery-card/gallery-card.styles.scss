@@ -6,18 +6,22 @@
   align-items: center;
   position: relative;
   width: 450px;
-  /* Adjust as needed */
-  // border: 1px solid black;
+  border: none;
 
-  .image-container {
+  .gallery-image-container {
     /* Adjust the height to your preference */
     overflow: hidden;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
 
     img {
       height: auto;
-      margin: 0 auto;
+      margin: 0;
       object-fit: cover;
+      width: 100%;
     }
   }
 

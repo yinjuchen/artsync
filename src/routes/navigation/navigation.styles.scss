@@ -15,10 +15,8 @@
     top: 0;
     background-color: #fff;
     z-index: 1000;
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
-    
-    
+    box-sizing: border-box;
     .nav-link {
       padding: 10px 15px;
       cursor: pointer;
@@ -26,5 +24,22 @@
       color: black;
       font-size: 1.2rem;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links-container {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    /* Adjust as needed */
+    display: block;
+    /* Display as block for mobile view */
+    text-align: center;
+    /* Center text for mobile view */
+    font-size: 1rem;
   }
 }
