@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 450px;
+  width: 100%;/* Adjust to occupy available width */  
+  max-width: 450px;/* Set a maximum width for larger screens */
   border: none;
 
   .gallery-image-container {
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%; /* Occupy available width */
 
     img {
       height: auto;
@@ -31,7 +32,7 @@
     align-items: center;
     height: auto;
     font-size: 1.1rem;
-    padding: 10px 20px;
+    padding: 2% 5%;
     span {
         display: flex;
       }
@@ -49,11 +50,11 @@
 
 @media screen and (max-width: 768px) {
   .gallery-card-container {
-    width: 100%;
+    max-width: 100%;/* Occupy full width */    
     justify-content: left;
   }
   .footer {
-    padding: 0;
+    padding: 1% 3%;/* Adjust padding for smaller screens */
     span {
         display: flex;
         align-items: flex-start;
