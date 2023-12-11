@@ -26,14 +26,14 @@
   }
 }
 
-@media (max-width:480px) {
+@media screen and (max-width: 480px) {
   .quote-card-container {
     margin: 0 10px;
-    transition: none; /* Remove transition on touch devices */
 
+    /* Adjust the hover effect specifically for smaller screens */
+    &:hover {
+      opacity: unset;
+      transform: none;
+    }
   }
 }
-  
-
-
-
