@@ -29,11 +29,10 @@
 @media screen and (max-width: 480px) {
   .quote-card-container {
     margin: 0 10px;
+  }
 
-    /* Adjust the hover effect specifically for smaller screens */
-    &:hover {
-      opacity: unset;
-      transform: none;
-    }
+  .quote-cards-container:not(:hover) .quote-card-container:hover {
+    opacity: unset;
+    transform: none;
   }
 }
