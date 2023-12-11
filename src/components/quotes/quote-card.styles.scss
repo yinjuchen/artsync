@@ -29,6 +29,8 @@
 @media (max-width:480px) {
   .quote-card-container {
     margin: 0 10px;
+    transition: none; /* Remove transition on touch devices */
+
   }
 }
   
