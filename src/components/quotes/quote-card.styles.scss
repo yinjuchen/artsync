@@ -33,6 +33,6 @@
 
   .quote-cards-container:not(:hover) .quote-card-container:hover {
     opacity: unset;
-    transform: none;
+    transform: unset;
   }
 }
