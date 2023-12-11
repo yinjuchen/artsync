@@ -26,12 +26,8 @@
   }
 }
 
-@media (max-width:480px) and (hover:none){
+@media (max-width:480px) {
   .quote-card-container {
-    &:active {
-      opacity: 1;
-      transform: scale(1.1)
-    }
     margin: 0 10px;
   }
 }
