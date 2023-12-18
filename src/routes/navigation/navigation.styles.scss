@@ -17,6 +17,9 @@
     z-index: 1000;
     padding: 10px 0;
     box-sizing: border-box;
+
+  }
+
     .nav-link {
       padding: 10px 15px;
       cursor: pointer;
@@ -24,7 +27,6 @@
       color: black;
       font-size: 1.2rem;
     }
-  }
 }
 
 @media screen and (max-width: 480px) {
