@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   position: relative;
   width: 100%;/* Adjust to occupy available width */  
   max-width: 450px;/* Set a maximum width for larger screens */
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%; /* Occupy available width */
 
     img {

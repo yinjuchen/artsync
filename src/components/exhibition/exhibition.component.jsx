@@ -1,16 +1,19 @@
 import { Fragment, useEffect, useState } from 'react';
 import ExhibitionCardList from '../exhibition-card-list/exhibition-card-list.component'
 import SearchBox from '../search-box/search-box.component'
+import './exhibition.styles.scss'
+import Spinner from '../spinner/spinner.component';
 
 const Exhibition = () => {
   const [searchField, setSearchField] = useState('')
   const [artworkers, setArtworkers] = useState([])
   const [filterredArtworkers, setFilterredArtWorkers] = useState(artworkers)
+  const [isLoading, setIsLoading] = useState(false)
   
   // Fetch API
   useEffect(() => {
+    setIsLoading(true)
     fetch('https://openaccess-api.clevelandart.org/api/artworks/?limit=6&indent=1&has_image=1')
-
       .then(res => res.json())
       .then(user => {
         setArtworkers(user.data)
@@ -19,9 +22,11 @@ const Exhibition = () => {
       .catch(error => {
         console.error('Error fetching data:', error)
       })
+      .finally(() => {
+        setIsLoading(false)
+      })
   }, [])
 
-  
   // filter artworker by name
   useEffect(() => {
     const newFilteredArtworkers = artworkers.filter((artworker) => {
@@ -46,20 +51,27 @@ const Exhibition = () => {
   // console.log('render')
 
 return (
-  <div className="App">
+  <Fragment>
     {
-      filterredArtworkers.length > 0 && (
+      isLoading 
+      ? (<Spinner />) 
+      : (
         <Fragment>
-        <SearchBox
-          onChangeHandler={onSearchChange}
-          className='search-box'
-          placeholder='search artist by name'
-        />
-        <ExhibitionCardList artworkers={filterredArtworkers} />
-      </Fragment>
-      )
-    }
-  </div>
-)}
+          <SearchBox
+            onChangeHandler={onSearchChange}
+            className='search-box'
+            placeholder='search artist by name'
+          />
+          {filterredArtworkers.length > 0 
+            ? (<ExhibitionCardList artworkers={filterredArtworkers} />) 
+            : (<div className="no-results">No results found.</div>)
+          }
+        </Fragment>
+        )
+     }
+  </Fragment>
+)
+}
+
 
 export default Exhibition

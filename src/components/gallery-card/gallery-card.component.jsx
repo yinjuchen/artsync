@@ -1,3 +1,4 @@
+import Spinner from '../spinner/spinner.component'
 import './gallery-card.styles.scss'
 import { useState } from 'react'
 
@@ -30,9 +31,9 @@ const GalleryCard = ({ gallery }) => {
         />
       </div>
       {!isImageLoaded && !isImageError && ( 
-      // If the image is not yet loaded (isImageLoaded is false), then render the 'Loading...' message."
+      // If the image is not yet loaded (isImageLoaded is false), then render the spinner
       // checks if the image has not yet loaded and there is no error associated with the image.
-        <h3>Loading...</h3>
+        <Spinner/>
       )}
       {isImageLoaded && !isImageError && ( 
       // Render footer when image is loaded successfully
