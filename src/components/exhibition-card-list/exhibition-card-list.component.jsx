@@ -4,7 +4,6 @@ import ExhibitionCard from '../exhibition-card/exhibition-card.component';
 import './exhibition-card-list.styles.scss'
 
 const ExhibitionCardList = ({ artworkers}) => {
-  console.log('exhibition card list')
   return (
     <div className="card-list-container">
       {artworkers.map((artworker, id) => (

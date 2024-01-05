@@ -5,13 +5,7 @@ import './home.styles.scss'
 const Home = () => {
   return (
     <Fragment>
-     <div className='home-image-container' style={{ 
-        backgroundImage: 'url("https://i.ibb.co/cKqxHZR/home-cover-image.webp")',
-        minHeight: '350px',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        position: 'relative',
-      }}>
+     <div className='home-image-container'>
         <div className='text-overlay'>
           <div className='home-quote'>“Art is the expression of the profoundest thoughts in the simplest way.”- Albert Einstein</div>
         </div>
