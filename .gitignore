@@ -27,6 +27,7 @@ home.data.json
 gallery.data.js
 exhibition.cy.js
 
-
-
+# Cypress Ignore
+cypress/downloads
+cypress/screenshots
 

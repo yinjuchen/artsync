@@ -11,7 +11,6 @@ describe('Page Refresh Test For Home', () => {
   })
 })
 
-
 describe('Page Refresh Test For Exhibition', () => {
   it('maintains the correct state or content after refresh', () => {
     // Visit the specific page
@@ -31,12 +30,15 @@ describe('Page Refresh Test for Gallery', () => {
   })
 })
 
-
 describe('Page Refresh Test for Quote', () => {
   it('maintains the correct state or content after refresh', () => {
     // Visit the specific page
     cy.visit('https://artsync.netlify.app/quote')
     cy.reload()
     cy.url().should('include', '/quote')
+    // check the elements are rendered correct number
+    const elemetsToVerify = cy.get('.quote-card-container');
+    const expectedQuotesContainerElements = 20
+    expect(elemetsToVerify.should('have.length', expectedQuotesContainerElements));
   })
 })
