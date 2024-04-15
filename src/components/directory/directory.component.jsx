@@ -25,8 +25,12 @@ const galleries = [
 const Directory = () => {
   return (
     <div className="directory-container">
-      {galleries.map((gallery, id) => (
-          <DirectoryItem key={gallery.id }gallery={gallery} />
+      {galleries.map((gallery) => (
+        <DirectoryItem
+          key={gallery.id}
+          gallery={gallery}
+          className={gallery.title.toLowerCase()} // Add a class based on the title
+        />
       ))}
     </div>
   )

@@ -1,8 +1,20 @@
 .directory-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* Allow items to wrap onto the next line */
-  width: 100%;
-  /* Adjust the gap between items */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+  width: 100%;
+
+  .sketch,
+    .sculpture {
+      grid-column: span 1;
+      /* Each takes up one column */
+    }
+
+  .painting {
+    grid-column: 1 / -1;
+    /* Spans the full width */
+  }
 }
+
+
+

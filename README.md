@@ -4,7 +4,7 @@ I love everything related to art. During my spare time, I like to visit art gall
 
 One of my favorite quotes is "To be or not to be, that is the question" by William Shakespeare.
 
-Since Covid-19, I haven't gotten changes to visit gallery in person. As a creative person, this has inspired me to do a art project aas a concept to visit the art online and immerse in the atomsphere of the beauty of art.
+Since Covid-19, I haven't gotten changes to visit gallery in person. As a creative person, this has inspired me to do a art project as a concept to visit the art online and immerse in the atomsphere of the beauty of art.
 
 ### Features
 
